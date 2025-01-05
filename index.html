@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derek - Personal Website</title>
+    <meta name="description" content="Website of Derek - A passionate website developer and ethical hacker.">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #9d00ff;
+            color: #00ffee;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        footer {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        form label, form input, form textarea {
+            display: block;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        form input, form textarea {
+            padding: 8px;
+            border: 1px solid #ccc;
+        }
+        form input[type="submit"] {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        form input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Derek's Personal Website</h1>
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm Derek, a passionate website developer and ethical hacker, eager to blend my technical skills with a commitment to continuous learning. I specialize in creating secure, functional websites tailored to clients' needs. My expertise lies in web development and cybersecurity. I offer website development and cybersecurity services for individuals or businesses aiming to enhance their online presence and security. My goal is to provide high-quality solutions while growing my knowledge and ensuring client satisfaction.</p>
+</section>
+
+<section id="portfolio">
+    <h2>Portfolio</h2>
+    <p>Check out my work on Instagram: <a href="https://www.instagram.com/demonic_studio" target="_blank">Instagram Profile</a>.</p>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <form action="https://formspree.io/f/mdkkpzvq" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        
+        <input type="submit" value="Send">
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 Derek</p>
+</footer>
+
+</body>
+</html>
