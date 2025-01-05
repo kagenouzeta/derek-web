@@ -3,88 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Derek - Personal Website</title>
+    <title>Demonic Studio</title>
     <meta name="description" content="Website of Derek - A passionate website developer and ethical hacker.">
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #00274d; /* Dark Blue background for the main page */
         }
+
         header {
-            background-color: #9d00ff;
-            color: #00ffee;
+            background: url('hero-bg.jpg') no-repeat center center;
+            background-size: cover;
+            color: #00aaff; /* Dark Blue header title color */
             text-align: center;
-            padding: 1em 0;
+            padding: 4em 0;
+            position: relative;
         }
+
         nav ul {
-            list-style-type: none;
+            list-style: none;
             padding: 0;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
         }
+
         nav ul li {
-            display: inline;
             margin-right: 15px;
         }
+
         nav ul li a {
-            color: white;
+            color: #00aaff; /* Dark Blue navigation link color */
             text-decoration: none;
+            font-weight: bold;
         }
+
+        nav ul li a:hover {
+            color: #0077cc; /* Dark Blue navigation link hover color */
+        }
+
         section {
-            padding: 20px;
+            padding: 60px 20px;
             max-width: 800px;
             margin: 0 auto;
+            color: #ffffff; /* Light Text color */
+            background-color: #003366; /* Dark Blue background for sections */
         }
+
+        section.about {
+            padding-top: 60px; /* Reduced padding for better layout */
+            background-color: #004080; /* Darker Blue for About Me section */
+            margin: 0 auto; /* Ensures centered content */
+            max-width: 800px; /* Limiting section width to avoid layout issues */
+        }
+
+        section.portfolio {
+            background-color: #004080; /* Darker Blue for Portfolio section */
+        }
+
+        section.contact {
+            background-color: #004080; /* Darker Blue for Contact section */
+        }
+
+        section.customization {
+            background-color: #004080; /* Darker Blue for the "Get Your Customized Website" section */
+        }
+
         footer {
-            background-color: #007BFF;
-            color: white;
+            background-color: #004080; /* Darker Blue footer background */
             text-align: center;
             padding: 1em 0;
         }
+
         form label, form input, form textarea {
             display: block;
             width: 100%;
             margin-bottom: 15px;
         }
+
         form input, form textarea {
             padding: 8px;
-            border: 1px solid #ccc;
+            border: 1px solid #0800ff;
         }
+
         form input[type="submit"] {
-            background-color: #007BFF;
-            color: white;
+            background-color: #007BFF; /* Dark Blue submit button background */
+            color: rgb(255, 255, 255); /* Submit button text color */
             border: none;
             cursor: pointer;
         }
+
         form input[type="submit"]:hover {
-            background-color: #0056b3;
+            background-color: hsl(211, 100%, 50%); /* Dark Blue hover for submit button */
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            margin-right: 15px;
+            color: white; /* Dark Blue social icon color */
+            font-size: 24px;
+        }
+
+        .social-icons a:hover {
+            color: #00aaff; /* Dark Blue social icon hover color */
+        }
+
+        a.portfolio-link {
+            color: #9a5bc4; /* Purple link color for Instagram */
+        }
+
+        @keyframes smoothColorChange {
+            0% { color: rgb(0, 170, 255); } /* Initial color (Dark Blue) */
+            50% { color: rgb(255, 105, 180); } /* Midway color (Pinkish) */
+            100% { color: rgb(0, 170, 255); } /* Final color (Dark Blue) */
+        }
+
+        header h1 {
+            font-size: 3em;
+            animation: smoothColorChange 5s infinite ease-in-out; /* Apply the smooth color change animation */
         }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Derek's Personal Website</h1>
+<header class="fade-in">
+    <h1>Demonic Studio</h1>
     <nav>
         <ul>
-            <li><a href="#about">About Me</a></li>
+            <li><a href="#customization">Customization</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">About Us</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 </header>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>Hello! I'm Derek, a passionate website developer and ethical hacker, eager to blend my technical skills with a commitment to continuous learning. I specialize in creating secure, functional websites tailored to clients' needs. My expertise lies in web development and cybersecurity. I offer website development and cybersecurity services for individuals or businesses aiming to enhance their online presence and security. My goal is to provide high-quality solutions while growing my knowledge and ensuring client satisfaction.</p>
+<section id="customization" class="customization">
+    <h2>Get Your Customized Website/Edit</h2>
+    <p>Whether you need a unique website designed or high-quality edits for your content, we’ve got you covered. Get in touch with us to create something tailored to your needs and bring your vision to life. To give a order DM us on <a href="https://www.instagram.com/demonic_studio" target="_blank" class="portfolio-link">Demonic Studio</a>
 </section>
 
-<section id="portfolio">
+<section id="portfolio" class="portfolio">
     <h2>Portfolio</h2>
-    <p>Check out my work on Instagram: <a href="https://www.instagram.com/demonic_studio" target="_blank">Instagram Profile</a>.</p>
+    <p>Check out our joint projects. We do both editing and website development: <a href="https://www.instagram.com/demonic_studio" target="_blank" class="portfolio-link">Instagram Profile</a>.</p>
 </section>
 
-<section id="contact">
+<section id="about" class="about">
+    <h2>About Us</h2>
+    
+    <h3>Derek</h3>
+    <p>Hello! I'm Derek, a passionate website developer and ethical hacker, eager to blend my technical skills with a commitment to continuous learning. I specialize in creating secure, functional websites tailored to clients' needs. My expertise lies in web development and cybersecurity. I offer website development and cybersecurity services for individuals or businesses aiming to enhance their online presence and security. My goal is to provide high-quality solutions while growing my knowledge and ensuring client satisfaction.</p>
+
+    <h3>Morom</h3>
+    <p>Hello! I'm Morom, a dedicated content creator specializing in high-quality video and photo editing. With a passion for storytelling and a keen eye for detail, I bring visuals to life, ensuring each project reflects creativity and precision. My expertise lies in editing, creating engaging content, and delivering tailored solutions to meet individual needs. Whether it's enhancing existing content or bringing new ideas to fruition, I strive for excellence and aim to exceed expectations.</p>
+</section>
+
+<section id="contact" class="contact">
     <h2>Contact</h2>
+    <p>For any troubleshooting or inquiries, feel free to reach out to us:</p>
     <form action="https://formspree.io/f/mdkkpzvq" method="post">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
@@ -99,9 +181,16 @@
     </form>
 </section>
 
-<footer>
+<footer id="footer">
     <p>&copy; 2025 Derek</p>
+    <div class="social-icons">
+        <a href="https://instagram.com/derek_._o76" target="_blank">
+            <img src="instagram-logo.gif" alt="Derek" width="24" height="24"> 
+            Derek
+        </a>
+        <a href="https://instagram.com/bong.khalifa" target="_blank">
+            <img src="instagram-logo.gif" alt="Morom" width="24" height="24"> 
+            Morom
+        </a>
+    </div>
 </footer>
-
-</body>
-</html>
